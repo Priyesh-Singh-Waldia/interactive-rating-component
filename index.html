@@ -11,13 +11,13 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <!-- Rating state start -->
-    <div class="container">
+    <!-- 1️⃣ Main Container -->
+    <div class="main-container">
       <div class="card">
         <div class="star button">
           <img src="images/icon-star.svg" alt="star_icon" />
@@ -34,17 +34,23 @@
           <button class="button btn">4</button>
           <button class="button btn">5</button>
         </div>
-        <button class="submit">Submit</button>
-        <!-- Rating state end -->
+        <button class="submit" id="submit">Submit</button>
+      </div>
+    </div>
 
-        <!-- Thank you state start -->
-
-        <!-- Add rating here -->
-        <!-- You selected
-          out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! -->
-
-        <!-- Thank you state end -->
+    <!-- 2️⃣ ThankYou Container -->
+    <div class="thankyou-container hidden">
+      <div class="card2">
+        <div class="image">
+          <img src="images/illustration-thank-you.svg" alt="transaction_icon" />
+        </div>
+        <div class="rate">You selected <span id="rating">5</span> out of 5</div>
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+        <button class="submit" id="back">Go Back</button>
       </div>
     </div>
     <footer class="attribution">
@@ -56,5 +62,6 @@
         >Priyesh Singh Waldia</a
       >.
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
